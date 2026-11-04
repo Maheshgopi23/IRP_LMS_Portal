@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #F5F9FE;
+}
+
+/* Header  */
+
+
+.header {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    height: 68px;
+}
+
+.logo 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.logo img {
+    height: 32px;
+    width: auto;
+}
+
+.logo-text {
+    color: #0B2F66;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.logo-accent {
+    color: #FE781E;
+    font-weight: 700;
+}
+
+.nav-links ul 
+{
+    display: flex;
+    gap: 38px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #0B2F66;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 0;
+    display: inline-block;
+}
+
+.nav-links a.active {
+    color: #FE781E;
+    border-bottom: 2px solid #FE781E;
+}
+
+.btn-outline
+ {
+    background-color: #FFFFFF;
+    color: #FE781E;
+    border: 1.5px solid #FE781E;
+    padding: 9px 22px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+/* Hero  */
+
+.hero {
+    background-image: url("https://res.cloudinary.com/dwh7w9kz1/image/upload/v1793204857/Climbing_Towards_Success_dcuk4i.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: #E8F1FC;
+    min-height: 320px;
+    padding: 45px 70px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.eyebrow {
+    color: #FE781E;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    margin: 0 0 8px;
+}
+
+.hero h1 {
+    color: #0B2F66;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 18px;
+}
+
+.hero h1 span {
+    color: #FE781E;
+}
+
+.hero-text {
+    color: #5A7DB5;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 22px;
+}
+
+.btn {
+    background-color: #FE781E;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 22px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn .arrow {
+    margin-left: 6px;
+}
+
+/* ---------- Learning Journey ---------- */
+.learning-journey {
+    padding: 28px 70px 80px;
+    background-color: #F5F9FE;
+}
+
+.learning-journey h2 {
+    color: #0B2F66;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.subtitle {
+    color: #5A7DB5;
+    font-size: 14px;
+    margin: 0 0 26px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #D6E6F8;
+    border-radius: 10px;
+    padding: 16px 20px 22px;
+}
+
+.step-number {
+    display: block;
+    color: #FE781E;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.card h3 {
+    color: #0B2F66;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 4px 0 10px;
+}
+
+.card p {
+    color: #7FA3D6;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .header,
+    .hero,
+    .learning-journey {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-links ul {
+        gap: 16px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Courses Hero Section */
+
+
+.courses-hero{
+    padding: 20px 70px 20px;
+    background-image: url('https://res.cloudinary.com/dwh7w9kz1/image/upload/v1793204868/Minimalist_E-learning_Banner_with_Graduation_Cap_l9jd7u.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.courses-hero-content h1{
+    color: #0B2F66;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 0px;
+}
+
+.courses-hero-content .eyebrow {
+    color: #FE781E;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8;
+
+}
+
+.courses-hero-content h1 span.highlight {
+    color: #FE781E;
+}
+
+.courses-hero-content p.hero-text {
+    color: #5A7DB5;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: -10 0 22px;
+}
+
+
+/* Tutorials Section */
+
+.tutorials-section{
+    padding: 20px 70px 80px;
+
+}
+
+.tutorials{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+
+}
+
+.tutorial{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #D6E9FF;
+    padding: 10px;
+
+}
+
+.tutorial iframe{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+}
+
+.tutorial p:first-of-type {
+    font-size: 14px;
+    color: #0B2F66;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+
+.tutorial p:last-of-type {
+    font-size: 12px;
+    margin-top: -10px;
+    
+}
+
+
+.tutorials .explore-more{
+    grid-column: span 3;
+    height: 180px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D6E6F8;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #E2F2FD;
+}
+
+.explore-more-courses p:nth-of-type(1) {
+    color: #0B2F66;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.explore-more-courses p:nth-of-type(2) {
+    color: #5A7DB5;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+.contact-hero {
+    padding: 50px 70px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    background-color: #E8F1FC;
+    background-image: url('https://res.cloudinary.com/dwh7w9kz1/image/upload/v1793204868/Minimalist_E-learning_Banner_with_Graduation_Cap_l9jd7u.png');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+ 
+.contact-hero-content h1 {
+    color: #0B2F66;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 14px;
+}
+ 
+.contact-hero-content .eyebrow {
+    color: #FE781E;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    margin: 0 0 6px;
+}
+ 
+.contact-hero-content h1 span.highlight {
+    color: #FE781E;
+}
+ 
+.contact-hero-content p.hero-text {
+    color: #5A7DB5;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+ 
+/* Contact Section */
+ 
+.contact-section {
+    padding: 40px 70px 70px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    background-color: #F5F9FE;
+    margin-top: -50px;
+}
+ 
+/* Left: info card */
+ 
+.contact-info {
+    width: 32%;
+    border: 1px solid #D6E6F8;
+    border-radius: 10px;
+    padding: 20px 30px 30px;
+    background-color: #eaf1fb;
+}
+ 
+.contact-info h2 {
+    color: #0B2F66;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+ 
+.info-intro {
+    color: #5A7DB5;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 30px;
+}
+ 
+.info-item {
+    margin-bottom: 26px;
+}
+ 
+.info-item h4 {
+    color: #FE781E;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+ 
+.info-item p {
+    color: #5A7DB5;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+ 
+/* Right: form card */
+ 
+.contact-form-card {
+    flex: 1;
+    border: 1px solid #D6E6F8;
+    border-radius: 10px;
+    padding: 20px 36px 36px;
+    background-color: #F9FBFE;
+}
+ 
+.contact-form-card h2 {
+    color: #0B2F66;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+ 
+.form-subtitle {
+    color: #5A7DB5;
+    font-size: 15px;
+    margin: 0 0 18px;
+}
+ 
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+ 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+ 
+.form-group label {
+    color: #0B2F66;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+ 
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #D6E6F8;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 0 16px;
+    height: 46px;
+    font-family: inherit;
+    font-size: 13px;
+    color: #0B2F66;
+    outline: none;
+}
+ 
+.form-group textarea {
+    height: 88px;
+    padding: 14px 16px;
+    resize: vertical;
+}
+ 
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #7FA3D6;
+}
+ 
+.form-group select {
+    color: #5A7DB5;
+    cursor: pointer;
+}
+ 
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #FE781E;
+}
+ 
+.btn-submit {
+    width: 100%;
+    height: 46px;
+    background-color: #FE781E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+}
+ 
+.btn-submit:hover {
+    background-color: #E96A12;
+}
+ 
+ 
+/* Responsive */
+ 
+@media (max-width: 900px) {
+    .contact-section {
+        flex-direction: column;
+    }
+ 
+    .contact-info {
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .contact-hero,
+    .contact-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ 
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
